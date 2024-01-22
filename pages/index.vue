@@ -166,7 +166,7 @@ const initialConsult: Consultation = {
   name: "Initial Consult",
   description:
     "One hour online video session and will involve me asking you for a lot of information in order to get to know you and your circumstances; and how I can best help you.",
-  price: 75,
+  price: 90,
 };
 const followUp: Consultation = {
   name: "Follow Up Consult",
