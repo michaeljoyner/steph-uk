@@ -1,23 +1,39 @@
 <template>
-  <div class="max-w-6xl mx-auto py-20">
-    <div class="flex gap-12 mb-12">
+  <div>
+    <nav class="w-full flex items-center justify-end shadow px-8 py-3">
+      <a
+        class="px-4 py-2 bg-fuchsia-400 rounded-lg shadow-md text-sm font-display font-semibold text-white hover:bg-fuchsia-500"
+        href="#contact"
+        >Book a Consult</a
+      >
+    </nav>
+  </div>
+  <div class="max-w-4xl mx-auto py-20 px-6">
+    <div class="flex flex-col md:flex-row gap-12 mb-12">
       <div class="flex flex-col items-center">
         <img
           src="/steph_profile.png"
-          class="h-64 w-64 object-cover rounded-full"
+          class="w-32 md:h-64 h-32 md:w-64 object-cover rounded-full"
           alt=""
         />
       </div>
       <div class="max-w-xl">
         <p>
-          <span class="text-5xl font-bold">Hello! I am Steph,</span><br />
+          <span class="font-display text-5xl font-black"
+            >Hello! I am Steph,</span
+          ><br />
           <span>and I am so pleased you are here.</span>
         </p>
         <p class="my-6 text-xl">
-          I am a Registered Dietician with more than 10 years of experience of
-          working with people to help them improve their health.
+          I am a
+          <span
+            class="underline decoration-fuchsia-400 underline-offset-2 decoration-wavy"
+            >Registered Dietician</span
+          >
+          with more than 10 years of experience of working with people to help
+          them improve their health.
         </p>
-        <p>
+        <p class="font-thin text-lg">
           My ability to really listen to someone, empathise with their situation
           and make them feel validated and heard, has served me very well in my
           practice. When someone feels understood and safe enough to be honest
@@ -25,9 +41,14 @@
         </p>
       </div>
     </div>
+    <hr class="border-b border-fuchsia-300 max-w-xl mx-auto" />
 
-    <div class="my-12">
-      <p class="text-xl font-semibold mb-6">How I Can Help You</p>
+    <div class="mt-20">
+      <p
+        class="text-xl font-semibold underline underline-offset-2 decoration-fuchsia-400 mb-6 decoration-wavy"
+      >
+        How I Can Help You
+      </p>
 
       <div class="max-w-2xl">
         <p class="my-4">
@@ -48,7 +69,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="">
         <p class="font-semibold underline">Areas I can assist with:</p>
         <p></p>
         <ul class="list-disc list-inside">
@@ -69,40 +90,60 @@
         </ul>
       </div>
     </div>
+    <ul class="mt-12 border-b border-fuchsia-300 max-w-xl mx-auto"></ul>
 
-    <div class="my-12">
+    <div class="my-20 scroll-mt-12" id="contact">
       <p
-        class="text-xl font-semibold underline underline-offset-2 decoration-fuchsia-400 mb-6"
+        class="text-xl font-semibold underline underline-offset-2 decoration-wavy decoration-fuchsia-400 mb-6"
       >
         Book a Virtual Consult
       </p>
 
       <p class="my-6 max-w-2xl">
-        Virtual consults are private, online meetings through Zoom or Google
+        Virtual consults are private, online video calls through Zoom or Google
         Meet.
       </p>
 
-      <div class="flex gap-12">
+      <div class="flex flex-col md:flex-row gap-12">
         <ConsultCard :consult="initialConsult" />
         <ConsultCard :consult="followUp" />
       </div>
 
       <div class="my-6">
         <p class="my-4 max-w-2xl">
-          Get in touch to book your consult. Let me know what days and times
-          suit you, and I will get back to you to arrange our consult.
+          Send me a message to book your consult. Let me know what days and
+          times suit you, and I will get back to you to arrange our consult.
         </p>
-        <a
-          href=""
-          class="bg-fuchsia-500 px-4 py-1 rounded-md shadow text-white inline-block"
-          >Get in Touch</a
-        >
+        <div class="my-8 flex justify-center md:justify-start">
+          <a
+            href="mailto:stephjoyner18@gmail.com"
+            class="px-4 py-2 bg-fuchsia-400 rounded-lg shadow-md text-sm font-display font-semibold text-white hover:bg-fuchsia-500 inline-flex items-center gap-4"
+          >
+            <span class="">Get in Touch</span>
+            <div class="border-r-2 border-fuchsia-300 h-4"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-4 h-4 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
+    <hr class="border-b-.5 border-fuchsia-300 max-w-xl mx-auto" />
 
-    <div class="my-12">
+    <div class="mt-20">
       <p
-        class="text-xl font-semibold underline underline-offset-2 decoration-fuchsia-400 mb-6"
+        class="text-xl font-semibold underline underline-offset-2 decoration-fuchsia-400 mb-6 decoration-wavy"
       >
         A Little More About Me
       </p>
@@ -112,11 +153,10 @@
         into a gripping book (when my children allow me the time).
       </p>
     </div>
-
-    <div>
-      <p>Looking at the whole picture</p>
-    </div>
   </div>
+  <footer class="h-20 bg-fuchsia-500">
+    <span></span>
+  </footer>
 </template>
 
 <script lang="ts" setup>
