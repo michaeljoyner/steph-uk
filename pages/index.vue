@@ -156,7 +156,7 @@
       </p>
     </div>
   </div>
-  <footer class="h-20 bg-fuchsia-500">
+  <footer class="h-4 bg-fuchsia-500">
     <span></span>
   </footer>
 </template>
