@@ -11,11 +11,13 @@
   <div class="max-w-4xl mx-auto py-20 px-6">
     <div class="flex flex-col md:flex-row gap-12 mb-12">
       <div class="flex flex-col items-center">
-        <img
-          src="/steph_profile.png"
-          class="w-32 md:h-64 h-32 md:w-64 object-cover rounded-full"
-          alt=""
-        />
+        <div class="w-32 md:h-64 h-32 md:w-64 shrink-0">
+          <img
+            src="/steph_headshot.jpg"
+            class="rounded-full w-full h-full object-cover"
+            alt=""
+          />
+        </div>
       </div>
       <div class="max-w-xl">
         <p>
@@ -162,6 +164,17 @@
 <script lang="ts" setup>
 import type { Consultation } from "~/stuff";
 
+useSeoMeta({
+  title: "Steph | Registered Dietitian",
+  ogTitle: "Steph | Registered Dietitian",
+  description:
+    "I am a Registered Dietician with more than 10 years of experience of working with people to help them improve their health.",
+  ogDescription:
+    "I am a Registered Dietician with more than 10 years of experience of working with people to help them improve their health.",
+  ogImage: "https://dietitiansteph.co.uk",
+  twitterCard: "summary_large_image",
+});
+
 const initialConsult: Consultation = {
   name: "Initial Consult",
   description:
@@ -172,6 +185,6 @@ const followUp: Consultation = {
   name: "Follow Up Consult",
   description:
     "Typically a 30 to 45 minute online video session where we assess and discuss your progress.",
-  price: 35,
+  price: 50,
 };
 </script>
