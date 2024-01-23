@@ -30,7 +30,7 @@
           I am a
           <span
             class="underline decoration-fuchsia-400 underline-offset-2 decoration-wavy"
-            >Registered Dietician</span
+            >Registered Dietitian</span
           >
           with more than 10 years of experience of working with people to help
           them improve their health.
@@ -168,9 +168,9 @@ useSeoMeta({
   title: "Steph | Registered Dietitian",
   ogTitle: "Steph | Registered Dietitian",
   description:
-    "I am a Registered Dietician with more than 10 years of experience of working with people to help them improve their health.",
+    "I am a Registered Dietitian with more than 10 years of experience of working with people to help them improve their health.",
   ogDescription:
-    "I am a Registered Dietician with more than 10 years of experience of working with people to help them improve their health.",
+    "I am a Registered Dietitian with more than 10 years of experience of working with people to help them improve their health.",
   ogImage: "https://dietitiansteph.co.uk",
   twitterCard: "summary_large_image",
 });
